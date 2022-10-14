@@ -25,6 +25,7 @@ import NativeBaseIcon from './src/components/NativeBaseIcon';
 import SplashScreen from './src/screens/SplashScreen';
 import {LinearGradient} from 'react-native-svg';
 import LangScreen from './src/screens/LangScreen';
+import UserRoleScreen from './src/screens/UserRoleScreen';
 
 const config = {
   dependencies: {
@@ -35,7 +36,7 @@ const config = {
 const App = () => {
   return (
     <NativeBaseProvider config={config}>
-      <LangScreen />
+      <UserRoleScreen />
     </NativeBaseProvider>
   );
 };
