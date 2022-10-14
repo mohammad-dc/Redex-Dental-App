@@ -6,7 +6,7 @@ import {AntDesignIcon} from '../../../common/icons';
 
 export default function BackNavigatorButton() {
   return (
-    <Box bg={colors.white} p={'1.5'} borderRadius={'xl'}>
+    <Box bg={colors.white} p={'1.5'} borderRadius={'xl'} maxW={'40px'}>
       <AntDesignIcon name="arrowleft" size={25} />
     </Box>
   );
