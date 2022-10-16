@@ -3,4 +3,5 @@ export interface IButtonProps {
   isLoadingText?: string;
   style?: 'normal' | 'primary' | 'disabled';
   text: string;
+  onPress?: (e: any) => void;
 }

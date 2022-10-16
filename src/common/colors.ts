@@ -4,4 +4,5 @@ export const colors = {
   bg_gray: '#F6F9FE',
   black: '#192545',
   white: '#FFFFFF',
+  orange: '#DA7C27',
 };

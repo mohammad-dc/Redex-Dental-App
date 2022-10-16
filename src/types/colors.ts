@@ -3,4 +3,5 @@ export type colorTypes =
   | 'light_blue'
   | 'bg_gray'
   | 'black'
-  | 'white';
+  | 'white'
+  | 'orange';

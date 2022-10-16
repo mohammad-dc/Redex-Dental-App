@@ -9,23 +9,12 @@
  */
 
 import React from 'react';
-import {
-  Link,
-  Text,
-  HStack,
-  Center,
-  Heading,
-  Switch,
-  useColorMode,
-  NativeBaseProvider,
-  VStack,
-  Box,
-} from 'native-base';
-import NativeBaseIcon from './src/components/NativeBaseIcon';
-import SplashScreen from './src/screens/SplashScreen';
+import {NativeBaseProvider} from 'native-base';
 import {LinearGradient} from 'react-native-svg';
-import LangScreen from './src/screens/LangScreen';
-import UserRoleScreen from './src/screens/UserRoleScreen';
+import LoginScreen from './src/screens/LoginScreen';
+import SignUpScreen from './src/screens/SignupScreen';
+import VerifyCodeScreen from './src/screens/VerifyCodeScreen';
+import NewPasswordScreen from './src/screens/NewPasswordScreen';
 
 const config = {
   dependencies: {
@@ -36,7 +25,7 @@ const config = {
 const App = () => {
   return (
     <NativeBaseProvider config={config}>
-      <UserRoleScreen />
+      <NewPasswordScreen />
     </NativeBaseProvider>
   );
 };
