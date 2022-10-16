@@ -9,10 +9,13 @@ export default function Button({
   isLoadingText,
   text,
   style = 'normal',
+  onPress = () => null,
 }: IButtonProps) {
   const is_primary = style === 'primary';
   return (
     <NativeButton
+      title="submit"
+      onPress={e => onPress(e)}
       rounded={'xl'}
       _hover={{opacity: 0.4}}
       py={3}
