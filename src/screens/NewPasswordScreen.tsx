@@ -7,7 +7,7 @@ import Text from '../components/Text';
 
 export default function NewPasswordScreen() {
   return (
-    <ScrollView w={'full'} h={'full'}>
+    <ScrollView w={'full'} h={'full'} bg={colors.bg_gray}>
       <Box p={4} bg={colors.bg_gray} h={'full'}>
         <VStack space={5}>
           <HeaderTitle heading="New Password" />

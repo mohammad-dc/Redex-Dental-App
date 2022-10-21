@@ -15,6 +15,8 @@ import LoginScreen from './src/screens/LoginScreen';
 import SignUpScreen from './src/screens/SignupScreen';
 import VerifyCodeScreen from './src/screens/VerifyCodeScreen';
 import NewPasswordScreen from './src/screens/NewPasswordScreen';
+import SearchScreen from './src/screens/Patient/SearchScreen';
+import DoctorProfileScreen from './src/screens/Patient/DoctorProfileScreen';
 
 const config = {
   dependencies: {
@@ -25,7 +27,7 @@ const config = {
 const App = () => {
   return (
     <NativeBaseProvider config={config}>
-      <NewPasswordScreen />
+      <DoctorProfileScreen />
     </NativeBaseProvider>
   );
 };

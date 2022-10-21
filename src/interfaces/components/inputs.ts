@@ -30,3 +30,10 @@ export interface ISelectBoxProps {
   value: any;
   options: any[];
 }
+
+export interface ISearchBoxProps {
+  hint: string;
+  name: string;
+  value: string;
+  onChangeText: (e: any) => void;
+}
