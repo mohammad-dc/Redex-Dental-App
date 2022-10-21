@@ -4,4 +4,7 @@ export type colorTypes =
   | 'bg_gray'
   | 'black'
   | 'white'
+  | 'green'
+  | 'border'
+  | 'red'
   | 'orange';

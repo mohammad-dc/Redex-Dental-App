@@ -42,7 +42,7 @@ export default function RegisterForm() {
         touched,
       }) => (
         <View>
-          <VStack space={4}>
+          <VStack space={4} py={3}>
             <Field
               as={InputBox}
               onChangeText={handleChange('name')}
@@ -107,10 +107,10 @@ export default function RegisterForm() {
             <Spacer h={3} />
             <Button
               isLoading={isSubmitting}
-              isLoadingText={'Login'}
+              isLoadingText={'Creating'}
               onPress={handleSubmit}
               style="primary"
-              text="Login"
+              text="Create New"
             />
           </VStack>
         </View>

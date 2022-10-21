@@ -12,6 +12,7 @@ export default function Button({
   onPress = () => null,
 }: IButtonProps) {
   const is_primary = style === 'primary';
+  const is_outline = style === 'outline';
   return (
     <NativeButton
       title="submit"
@@ -22,8 +23,9 @@ export default function Button({
       isLoading={isLoading}
       isLoadingText={isLoadingText}
       bg={is_primary ? colors.dark_blue : colors.white}
-      border={`1px solid ${colors.dark_blue}`}
-      w={is_primary ? 'full' : '1/2'}
+      borderWidth={'1px'}
+      borderColor={is_primary || is_outline ? colors.dark_blue : colors.white}
+      w={is_primary ? 'full' : is_outline ? 'full' : '1/2'}
       style={
         is_primary
           ? {
@@ -35,13 +37,14 @@ export default function Button({
               shadowOpacity: 0.32,
               shadowRadius: 5.46,
 
-              elevation: 9,
+              elevation: 50,
             }
           : {}
       }>
       <Text
         value={text}
-        color={is_primary ? 'white' : 'black'}
+        size={'xs'}
+        color={is_primary ? 'white' : is_outline ? 'dark_blue' : 'black'}
         family={is_primary ? 'bold' : 'medium'}
       />
     </NativeButton>

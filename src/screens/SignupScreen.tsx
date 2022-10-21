@@ -1,4 +1,3 @@
-import {Formik} from 'formik';
 import {Box, Center, ScrollView, VStack} from 'native-base';
 import React from 'react';
 import {colors} from '../common/colors';
@@ -8,7 +7,7 @@ import Text from '../components/Text';
 
 export default function SignUpScreen() {
   return (
-    <ScrollView w={'full'} h={'full'}>
+    <ScrollView w={'full'} h={'full'} bg={colors.bg_gray}>
       <Box p={4} bg={colors.bg_gray} h={'full'}>
         <VStack space={5}>
           <HeaderTitle heading="Let's Register" />
