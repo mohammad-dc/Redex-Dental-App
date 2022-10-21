@@ -22,6 +22,7 @@ export default function InputBox({
   value,
   onChangeText,
   onBlur,
+  bg = 'white',
 }: IInputBoxProps) {
   const [show, setShow] = React.useState(false);
   return (
@@ -34,7 +35,7 @@ export default function InputBox({
         name={name}
         borderRadius={'xl'}
         borderColor={'transparent'}
-        bg={colors.white}
+        bg={colors[bg]}
         placeholder={hint}
         type={secure ? (show ? 'text' : 'password') : type}
         InputRightElement={

@@ -12,6 +12,7 @@ export default function SelectBox({
   name,
   value,
   options,
+  bg = 'white',
 }: ISelectBoxProps) {
   return (
     <FormControl w="full" isInvalid={isInvalid}>
@@ -19,7 +20,7 @@ export default function SelectBox({
       <Select
         borderRadius={'xl'}
         borderColor={'transparent'}
-        bg={colors.white}
+        bg={colors[bg]}
         minWidth="200"
         accessibilityLabel={hint}
         placeholder={hint}
