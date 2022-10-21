@@ -1,3 +1,5 @@
+import {colorTypes} from '../../types/colors';
+
 export interface IInputBoxProps {
   isInvalid: boolean;
   secure: boolean;
@@ -7,6 +9,7 @@ export interface IInputBoxProps {
   error?: string;
   name: string;
   value: any;
+  bg?: colorTypes;
   onChangeText: (e: any) => void;
   onBlur: (e: any) => void;
 }
@@ -28,6 +31,7 @@ export interface ISelectBoxProps {
   error?: string;
   name: string;
   value: any;
+  bg?: colorTypes;
   options: any[];
 }
 
