@@ -9,23 +9,28 @@ export default function SearchBox({
   name,
   onChangeText,
   value,
+  isFull = false,
 }: ISearchBoxProps) {
   return (
     <FormControl
-      w={{
-        base: '80%',
-        md: '25%',
-      }}
+      w={
+        isFull
+          ? 'full'
+          : {
+              base: '80%',
+              md: '25%',
+            }
+      }
       style={{
         shadowColor: colors.border,
         shadowOffset: {
           width: 0,
-          height: 4,
+          height: 12,
         },
-        shadowOpacity: 0.32,
-        shadowRadius: 5.46,
+        shadowOpacity: 0.58,
+        shadowRadius: 16.0,
 
-        elevation: 9,
+        elevation: 24,
       }}>
       <Input
         bg={colors.white}

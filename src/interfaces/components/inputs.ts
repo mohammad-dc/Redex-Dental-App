@@ -39,5 +39,6 @@ export interface ISearchBoxProps {
   hint: string;
   name: string;
   value: string;
+  isFull?: boolean;
   onChangeText: (e: any) => void;
 }
