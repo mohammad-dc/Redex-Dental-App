@@ -19,6 +19,7 @@ import SearchScreen from './src/screens/Patient/SearchScreen';
 import DoctorProfileScreen from './src/screens/Patient/DoctorProfileScreen';
 import AccountScreen from './src/screens/AccountScreen';
 import NotificationsScreen from './src/screens/NotificationsScreen';
+import SettingsScreen from './src/screens/SettingsScreen';
 
 const config = {
   dependencies: {
@@ -29,7 +30,7 @@ const config = {
 const App = () => {
   return (
     <NativeBaseProvider config={config}>
-      <NotificationsScreen />
+      <SettingsScreen />
     </NativeBaseProvider>
   );
 };
