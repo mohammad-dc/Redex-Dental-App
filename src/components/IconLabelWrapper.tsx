@@ -9,9 +9,8 @@ export default function IconLabelWrapper() {
   return (
     <VStack space={10}>
       {settings.map((el, i) => (
-        <HStack space={'1/4'} alignItems={'center'}>
+        <HStack key={el.id} space={'1/4'} alignItems={'center'}>
           <IconLabel
-            key={el.id}
             label={el.label}
             name={el.icon}
             color={el.id === 6 ? 'red' : 'black'}
