@@ -21,6 +21,7 @@ import AccountScreen from './src/screens/AccountScreen';
 import NotificationsScreen from './src/screens/NotificationsScreen';
 import SettingsScreen from './src/screens/SettingsScreen';
 import ChatListScreen from './src/screens/ChatListScreen';
+import AppointmentsScreen from './src/screens/AppointmentsScreen';
 
 const config = {
   dependencies: {
@@ -31,7 +32,7 @@ const config = {
 const App = () => {
   return (
     <NativeBaseProvider config={config}>
-      <ChatListScreen />
+      <AppointmentsScreen />
     </NativeBaseProvider>
   );
 };

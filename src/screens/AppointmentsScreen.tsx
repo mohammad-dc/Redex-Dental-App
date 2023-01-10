@@ -1,10 +1,13 @@
-import {View, Text} from 'react-native';
+import {Box} from 'native-base';
 import React from 'react';
+import AppBar from '../components/AppBar';
+import TabView from '../components/TabView';
 
 export default function AppointmentsScreen() {
   return (
-    <View>
-      <Text>AppointmentsScreen</Text>
-    </View>
+    <Box w={'full'} h={'full'}>
+      <AppBar />
+      <TabView />
+    </Box>
   );
 }
